@@ -1,0 +1,25 @@
+﻿@model mvc_core_mini_project.Models.Author
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/UserArea/Views/Shared/_ProjectLayout.cshtml";
+}
+
+<h1>Author Details</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AuthorName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AuthorName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.AuthorId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

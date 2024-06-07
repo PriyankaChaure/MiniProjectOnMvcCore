@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "07lAAzdisWj6fb/vR7hAFaURlZWFpl30anJG/5tYQhQ=",
+  "Source": "mvc_core_mini_project",
+  "BasePath": "_content/mvc_core_mini_project",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "mvc_core_mini_project\\wwwroot",
+      "Source": "mvc_core_mini_project",
+      "ContentRoot": "C:\\Ankit\\MVC_Core\\mvc_core_mini_project\\mvc_core_mini_project\\wwwroot\\",
+      "BasePath": "_content/mvc_core_mini_project",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Ankit\\MVC_Core\\mvc_core_mini_project\\mvc_core_mini_project\\wwwroot\\bootstrap\\css\\bootstrap.css",
+      "SourceId": "mvc_core_mini_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Ankit\\MVC_Core\\mvc_core_mini_project\\mvc_core_mini_project\\wwwroot\\",
+      "BasePath": "_content/mvc_core_mini_project",
+      "RelativePath": "bootstrap/css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Identity": "C:\\Ankit\\MVC_Core\\mvc_core_mini_project\\mvc_core_mini_project\\wwwroot\\bootstrap\\js\\bootstrap.bundle.js",
+      "SourceId": "mvc_core_mini_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Ankit\\MVC_Core\\mvc_core_mini_project\\mvc_core_mini_project\\wwwroot\\",
+      "BasePath": "_content/mvc_core_mini_project",
+      "RelativePath": "bootstrap/js/bootstrap.bundle.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\js\\bootstrap.bundle.js"
+    }
+  ]
+}

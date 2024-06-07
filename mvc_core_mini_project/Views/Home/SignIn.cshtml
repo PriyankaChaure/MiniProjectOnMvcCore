@@ -1,0 +1,54 @@
+﻿@model mvc_core_mini_project.Models.LoginVM.UserLogin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SignIn</title>
+
+    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+            <div class="col-md-6">
+    <h1> User Login </h1>
+    <form asp-action="SignIn">
+        <div asp-validation-summary="ModelOnly">
+        </div>
+        <div>
+           <label class="form-label" asp-for="UserName"></label>
+            <div>
+                            <input class="form-control" asp-for="UserName" />
+                <span asp-validation-for="UserName"></span>
+            </div>
+        </div>
+        <div>
+                        <label class="form-label" asp-for="Password"></label>
+            <div>
+                            <input class="form-control" asp-for="Password" />
+                <span asp-validation-for="Password"></span>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="SignIn" class="btn btn-primary" />|
+          <a asp-action="SignUp" class="btn btn-warning"> New User SignUp </a>
+        </div>
+    </form>
+                <h6>LoginCredentials:</h6>
+                <h6> UserName:priya@24</h6>
+                <h6>Password:123</h6>
+    
+    </div>
+    </div>
+ </div>
+</body>
+</html>

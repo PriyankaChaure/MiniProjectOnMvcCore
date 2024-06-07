@@ -1,0 +1,49 @@
+﻿@model mvc_core_mini_project.Models.Book
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/UserArea/Views/Shared/_ProjectLayout.cshtml";
+}
+
+<h1>Create Book</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BookName" class="control-label"></label>
+                <input asp-for="BookName" class="form-control" />
+                <span asp-validation-for="BookName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookDesc" class="control-label"></label>
+                <input asp-for="BookDesc" class="form-control" />
+                <span asp-validation-for="BookDesc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author.AuthorName" class="control-label"></label>
+                <select asp-for="AuthorId" class ="form-control" asp-items="ViewBag.AuthorId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject.SubjectName" class="control-label"></label>
+                <select asp-for="SubjectId" class ="form-control" asp-items="ViewBag.SubjectId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
